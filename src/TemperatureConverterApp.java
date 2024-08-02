@@ -5,10 +5,6 @@ import java.awt.event.KeyEvent;
 
 public class TemperatureConverterApp extends JFrame {
 
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private JTextField celsiusField;
     private JTextField fahrenheitField;
 
@@ -17,7 +13,7 @@ public class TemperatureConverterApp extends JFrame {
         setTitle("Celsius to Fahrenheit Converter");
         setSize(300, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new GridLayout(3, 2)); // 3 rows, 2 columns
+        setLayout(new GridLayout(3, 2)); 
 
         
         JLabel celsiusLabel = new JLabel("Celsius:");
@@ -66,7 +62,7 @@ public class TemperatureConverterApp extends JFrame {
     }
 
     public static void main(String[] args) {
-        // Create and display the form
+       
         SwingUtilities.invokeLater(() -> new TemperatureConverterApp());
     }
 }
